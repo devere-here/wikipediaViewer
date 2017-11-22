@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang = 'en-US'>
+
+<head>
+  <title>Wikipedia Viewer</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<div id="container">
+  <h1>Wikipedia Viewer</h1>
+<!-- Autocomplete div -->
+  <div id="autocomplete">
+    <span id="acMessage">AutoComplete is off</span>
+    <label class="switch acSwitch">
+      <input type="checkbox">
+      <span class="slider round"></span>
+    </label>
+  </div>
+<!-- Icon/Search Bar/Buttons -->
+  <span class="glyphicon" id="searchIcon">&#xe003;</span>
+  <input type="search" name="search-box" placeholder="Wikipedia Search">
+  <div>
+    <input type="submit" value="Random" class="button">
+    <input type="submit" value="Submit" class="button">
+  </div>
+<!--Area for results to pop up -->
+  <div id="pageList">  
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="actions.js"></script>
